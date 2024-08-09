@@ -7,9 +7,7 @@ class ArvoreCladistica : Arborizavel<ElementoTaxonomico> {
     }
 
     override fun inserir(dado: ElementoTaxonomico, pai: No<ElementoTaxonomico>?) {
-        val novoNo = No<ElementoTaxonomico>().apply {
-            this.dado = dado
-        }
+        val novoNo = No<ElementoTaxonomico>(dado)
 
         if (this.raiz == null) {
             this.raiz = novoNo

@@ -1,6 +1,5 @@
-class No<T> {
+class No<T>(val dado: T) {
 
-    var dado: T? = null
     private val filhos: MutableList<No<T>> = mutableListOf()
 
     fun getFilhos(): List<No<T>> {
